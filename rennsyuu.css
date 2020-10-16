@@ -274,6 +274,17 @@ h4{
      }
 
 
+    h1{
+	font-size: 20px;
+	margin-left: 20px;
+	margin-top: 20px;
+    }
+
+    .fruit li img:first-child{
+    display: none;
+    }
+
+
     .welcome h2{
 	font-size: 36px;
 	padding-top: 50px;
@@ -291,7 +302,10 @@ h4{
     /*セレクトバーここから*/
 
     .selectbar{
-    padding: 20px;
+    height: 160px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
 	}
 
     .selectbar ul{
@@ -306,38 +320,59 @@ h4{
 	width: 80px;
 	margin-left: 25px;
 	margin-right: 25px;
-    /*display: flex;*/
-/*	flex-flow: column wrap;
-	justify-content: space-around;*/
     }
 
 
     /*bodyここから*/
-    .body-left ul{
+    .body{
     display: flex;
     flex-direction: column;
     }
 
+    .body-left{
+    width: 100%;
+    }
 
-    .body-right img{
-	height: 50px;
-	width: 50px;
-	margin-left: 200px;
-	margin-top: 30px;
+    .body-left ul{
+    display: flex;
+    }
+
+    .body-left li img{
+	height: 80px;
+	width: 80px;
+    }
+
+
+    /*body-rightここから*/
+
+    .body{
+     height: 190px;
+    }
+
+    .body-right{
+    width: 100%;
     }
 
     .img-box{
     	flex-direction: column;
+    	margin-left: 0px;
+    	margin-top: 0px;
     }
-
 
     .img-box li{
     display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin-top: 30px;
+	margin-bottom: 10px;
     }
-}
+
+    .body-right p{
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    }
+
+
 
 /*formここから*/
 
@@ -372,4 +407,12 @@ h4{
 
     .contact .form{
 	margin: 15px 0 10px;
+    }
+
+
+/*footerここから*/
+   h4{
+	font-size: 18px;
+	padding-top: 25px;
+   }
 }
