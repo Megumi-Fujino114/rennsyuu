@@ -172,7 +172,6 @@ h1{
 .body-right{
 	width: 70%;
 	background-color:#EAD9FF ;
-	/*border: solid 3px black;*/
 }
 
 p{
@@ -181,13 +180,6 @@ p{
 	font-size: 30px;
 	text-align: center;
 	margin-top: 50px;
-}
-
-.body-right img{
-	height: 70px;
-	width: 70px;
-	margin-left: 650px;
-	margin-top: 30px;
 }
 
 /*asideここから*/
@@ -271,4 +263,113 @@ h4{
 	color: #CC3366;
 	text-align: center;
 	padding-top: 10px;
+}
+
+
+/*ここからスマホ対応*/
+
+@media screen and (max-width: 480px){
+  body{
+  	min-width: 375px;
+     }
+
+
+    .welcome h2{
+	font-size: 36px;
+	padding-top: 50px;
+    }
+
+   .welcome ul{
+	margin-top: 30px;
+    }
+
+   .welcome li{
+	font-size: 24px;
+    }
+
+    /*welcomeここまで*/
+    /*セレクトバーここから*/
+
+    .selectbar{
+    padding: 20px;
+	}
+
+    .selectbar ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 25px;
+    }
+
+    .selectbar li{
+	height: 30px;
+	width: 80px;
+	margin-left: 25px;
+	margin-right: 25px;
+    /*display: flex;*/
+/*	flex-flow: column wrap;
+	justify-content: space-around;*/
+    }
+
+
+    /*bodyここから*/
+    .body-left ul{
+    display: flex;
+    flex-direction: column;
+    }
+
+
+    .body-right img{
+	height: 50px;
+	width: 50px;
+	margin-left: 200px;
+	margin-top: 30px;
+    }
+
+    .img-box{
+    	flex-direction: column;
+    }
+
+
+    .img-box li{
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+    }
+}
+
+/*formここから*/
+
+   .form{
+	display: flex;
+	flex-direction: column;
+   }
+
+   .form .name ,.form .email{
+	height: 30px;
+	width: 250px;
+	font-size: 10px;
+	margin-left: 50px;
+   }
+
+	.inquiry{
+	height: 80px;
+	width: 250px;
+	font-size: 10px;
+	margin-top: 30px;
+	}
+
+	button{
+	height: 30px;
+	width: 70px;
+	margin-top: 0px;
+    }
+
+    .contact{
+    	height: 300px;
+    }
+
+    .contact .form{
+	margin: 15px 0 10px;
 }
